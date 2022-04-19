@@ -84,6 +84,12 @@ function containOnclick(){
       res=(res1*1)/(res2*1);
    }
    input.value = res;
+   pointBtn.classList.remove("no-drop");
+   pilusBtn.classList.remove("active-btn");
+   minusBtn.classList.remove("active-btn");
+   multiplyBtn.classList.remove("active-btn");
+   divisionBtn.classList.remove("active-btn");
+
 }
 
 
