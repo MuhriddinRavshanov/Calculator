@@ -13,6 +13,8 @@ function numberOnclick(item){
    if(input.value.length<10){
       input.value = Number(a);
    }
+   containBtn.classList.remove("no-drop");
+   containBtn.disabled = false;
 }
 
 function pointOnclick(){
@@ -71,17 +73,18 @@ function divisionOnclick(){
 
 function containOnclick(){
    res2 = input.value;
+   m=res2;
    if (operation === "+"){
-      res=res1*1+res2*1;
+      res=res1*1+m*1;
    }
    else if (operation === "-"){
-      res=res1*1-res2*1;
+      res=res1*1-m*1;
    }
    else if (operation === "*"){
-      res=(res1*1)*(res2*1);
+      res=(res1*1)*(m*1);
    }
    else if (operation === "/"){
-      res=(res1*1)/(res2*1);
+      res=(res1*1)/(m*1);
    }
    input.value = res;
    pointBtn.classList.remove("no-drop");
@@ -89,6 +92,8 @@ function containOnclick(){
    minusBtn.classList.remove("active-btn");
    multiplyBtn.classList.remove("active-btn");
    divisionBtn.classList.remove("active-btn");
+   containBtn.classList.add("no-drop");
+   containBtn.disabled = true;
 }
 
 
