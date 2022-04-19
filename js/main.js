@@ -117,21 +117,3 @@ function containOnclick(){
 
 
 
-
-
-
-
-// function renderBox(){
-//    for(i=0; i<list.length; i++){
-//       let button = document.createElement("button");
-//       button.textContent = list[i];
-//       if(list[i]==="="){
-//          button.classList.add("contain_btn")
-//       }
-//       button.onclick = function(){
-//          NumberOnclick(this.textContent);
-//       }
-//       box.appendChild(button);
-//    }
-// }
-// renderBox();
