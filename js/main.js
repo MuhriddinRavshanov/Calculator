@@ -1,3 +1,4 @@
+let resultInput = document.querySelector(".result_input");
 let input = document.querySelector(".input");
 let numberBtn = document.querySelector(".number_btn");
 let pilusBtn = document.querySelector(".pilus_btn");
@@ -30,7 +31,7 @@ function pointOnclick(){
 function pilusOnclick(){
    res1 = input.value;
    input.value = "";
-   document.querySelector(".top_input").value = String(res1)+"+";
+   resultInput.value = String(res1)+"+";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
@@ -43,7 +44,7 @@ function pilusOnclick(){
 function minusOnclick(){
    res1 = input.value;
    input.value = "";
-   document.querySelector(".top_input").value = String(res1)+"-";
+   resultInput.value = String(res1)+"-";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
@@ -56,7 +57,7 @@ function minusOnclick(){
 function multiplyOnclick(){
    res1 = input.value;
    input.value = "";
-   document.querySelector(".top_input").value = String(res1)+"*";
+   resultInput.value = String(res1)+"*";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
@@ -69,7 +70,7 @@ function multiplyOnclick(){
 function divisionOnclick(){
    res1 = input.value;
    input.value = "";
-   document.querySelector(".top_input").value = String(res1)+"÷";
+   resultInput.value = String(res1)+"÷";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
@@ -84,19 +85,19 @@ function containOnclick(){
    res2 = input.value;
    if (operation === "+"){
       res=res1*1+res2*1;
-      document.querySelector(".top_input").value = String(res1) + "+" + String(res2) + "=" + String(res);
+      resultInput.value = String(res1) + "+" + String(res2) + "=" + String(res);
    }
    else if (operation === "-"){
       res=res1*1-res2*1;
-      document.querySelector(".top_input").value = String(res1) + "-" + String(res2) + "=" + String(res);
+      resultInput.value = String(res1) + "-" + String(res2) + "=" + String(res);
    }
    else if (operation === "*"){
       res=(res1*1)*(res2*1);
-      document.querySelector(".top_input").value = String(res1) + "*" + String(res2) + "=" + String(res);
+      resultInput.value = String(res1) + "*" + String(res2) + "=" + String(res);
    }
    else if (operation === "/"){
       res=(res1*1)/(res2*1);
-      document.querySelector(".top_input").value = String(res1) + "÷" + String(res2) + "=" + String(res);
+      resultInput.value = String(res1) + "÷" + String(res2) + "=" + String(res);
    }
    input.value = res;
    pointBtn.classList.remove("no-drop");
