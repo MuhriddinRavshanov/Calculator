@@ -9,9 +9,7 @@ let containBtn = document.querySelector(".contain_btn");
 let a = "";
 let res1=0, res2=0, res=0, operation="";
 function numberOnclick(item){
-   if(containBtn.disabled){
-      input.value = "";
-   }
+   input.value = ""; 
    a += String(item);
    if(input.value.length<10){
       input.value = Number(a);
@@ -31,6 +29,7 @@ function pointOnclick(){
 
 function pilusOnclick(){
    res1 = input.value;
+   input.value = "";
    document.querySelector(".top_input").value = String(res1)+"+";
    a="";
    pointBtn.disabled = false;
@@ -43,6 +42,7 @@ function pilusOnclick(){
 }
 function minusOnclick(){
    res1 = input.value;
+   input.value = "";
    document.querySelector(".top_input").value = String(res1)+"-";
    a="";
    pointBtn.disabled = false;
@@ -55,6 +55,7 @@ function minusOnclick(){
 }
 function multiplyOnclick(){
    res1 = input.value;
+   input.value = "";
    document.querySelector(".top_input").value = String(res1)+"*";
    a="";
    pointBtn.disabled = false;
@@ -67,6 +68,7 @@ function multiplyOnclick(){
 }
 function divisionOnclick(){
    res1 = input.value;
+   input.value = "";
    document.querySelector(".top_input").value = String(res1)+"÷";
    a="";
    pointBtn.disabled = false;
@@ -80,18 +82,21 @@ function divisionOnclick(){
 
 function containOnclick(){
    res2 = input.value;
-   m=res2;
    if (operation === "+"){
-      res=res1*1+m*1;
+      res=res1*1+res2*1;
+      document.querySelector(".top_input").value = String(res1) + "+" + String(res2) + "=" + String(res);
    }
    else if (operation === "-"){
-      res=res1*1-m*1;
+      res=res1*1-res2*1;
+      document.querySelector(".top_input").value = String(res1) + "-" + String(res2) + "=" + String(res);
    }
    else if (operation === "*"){
-      res=(res1*1)*(m*1);
+      res=(res1*1)*(res2*1);
+      document.querySelector(".top_input").value = String(res1) + "*" + String(res2) + "=" + String(res);
    }
    else if (operation === "/"){
-      res=(res1*1)/(m*1);
+      res=(res1*1)/(res2*1);
+      document.querySelector(".top_input").value = String(res1) + "÷" + String(res2) + "=" + String(res);
    }
    input.value = res;
    pointBtn.classList.remove("no-drop");
@@ -101,6 +106,7 @@ function containOnclick(){
    divisionBtn.classList.remove("active-btn");
    containBtn.classList.add("no-drop");
    containBtn.disabled = true;
+   a = "";
 }
 
 

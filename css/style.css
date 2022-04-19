@@ -36,6 +36,7 @@ body{
    color: black;
    margin-bottom: 10px;
    border: none;
+   outline: none;
    text-align: end;
 }
 
