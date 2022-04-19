@@ -26,7 +26,7 @@ renderBox();
 
 function NumberOnclick(b){
    a+=b;
-   if()
+   // if()
    if(input.value.length<10){
       input.value=Number(a);
    }
