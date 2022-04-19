@@ -54,18 +54,17 @@ button {
    border: 0px solid rgb(255, 255, 255, 0.8);
    background-color: white;
    color: black;
-   /* border: 1px solid; */
    box-shadow: 0px 1px 5px 0px black;
    transition: 0.2s;
    cursor: pointer;
 }
 
-.btn_contain {
+.contain_btn {
    background-color: orangered;
 }
 
 button:active {
-   transform: scale(0.9);
+   transform: scale(0.8);
 }
 
 .card-1 {
