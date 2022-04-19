@@ -9,7 +9,7 @@ let containBtn = document.querySelector(".contain_btn");
 let a = "";
 let res1=0, res2=0, res=0, operation="";
 function numberOnclick(item){
-   if(containBtn.disabled===true){
+   if(containBtn.disabled){
       input.value = "";
    }
    a += String(item);
@@ -31,6 +31,7 @@ function pointOnclick(){
 
 function pilusOnclick(){
    res1 = input.value;
+   document.querySelector(".top_input").value = String(res1)+"+";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
@@ -42,6 +43,7 @@ function pilusOnclick(){
 }
 function minusOnclick(){
    res1 = input.value;
+   document.querySelector(".top_input").value = String(res1)+"-";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
@@ -53,6 +55,7 @@ function minusOnclick(){
 }
 function multiplyOnclick(){
    res1 = input.value;
+   document.querySelector(".top_input").value = String(res1)+"*";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
@@ -64,6 +67,7 @@ function multiplyOnclick(){
 }
 function divisionOnclick(){
    res1 = input.value;
+   document.querySelector(".top_input").value = String(res1)+"÷";
    a="";
    pointBtn.disabled = false;
    pointBtn.classList.remove("no-drop");
