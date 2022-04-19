@@ -89,7 +89,6 @@ function containOnclick(){
    minusBtn.classList.remove("active-btn");
    multiplyBtn.classList.remove("active-btn");
    divisionBtn.classList.remove("active-btn");
-
 }
 
 
