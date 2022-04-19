@@ -18,7 +18,7 @@ body{
    height: 460px;
    border-radius: 20px;
    padding: 25px 20px;
-   background-color: aqua;
+   background-color: white;
    box-shadow: 0 14px 28px rgba(0,0,0,0.2), 0 10px 10px rgba(0,0,0,0.2);
 
 }
@@ -34,12 +34,12 @@ body{
    font-size: 30px;
    font-weight: bold;
    font-family: sans-serif;
-   color: blue;
+   color: black;
    margin-bottom: 10px;
    border: none;
    outline: none;
    text-align: end;
-   background-color: aqua;
+   background-color: white;
 }
 
 .input {
