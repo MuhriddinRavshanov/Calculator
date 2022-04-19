@@ -31,15 +31,16 @@ body{
 .result_input {
    width: 100%;
    padding: 5px 12px;
+   background-color: aqua;
+   color: black;
+   text-align: end;
    font-size: 30px;
    font-weight: bold;
    font-family: sans-serif;
-   color: black;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
    border: none;
-   outline: none;
-   text-align: end;
-   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0px 1px 5px 0px black;
 }
 
 .input {
@@ -51,7 +52,7 @@ body{
    outline: none;
    border: none;
    border-radius: 5px;
-   margin-bottom: 40px;
+   margin-bottom: 30px;
    background-color: gold;
    color: black;
    box-shadow: 0px 1px 5px 0px black;
