@@ -99,7 +99,7 @@ function containOnclick(){
       res=(res1*1)/(res2*1);
       resultInput.value = String(res1) + "÷" + String(res2) + "=" + String(res);
    }
-   input.value = res;
+   input.value = res.toFixed(3);
    pointBtn.classList.remove("no-drop");
    pilusBtn.classList.remove("active-btn");
    minusBtn.classList.remove("active-btn");
@@ -109,6 +109,8 @@ function containOnclick(){
    containBtn.disabled = true;
    a = "";
 }
+
+
 
 
 
