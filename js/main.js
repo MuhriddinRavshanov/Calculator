@@ -9,6 +9,9 @@ let containBtn = document.querySelector(".contain_btn");
 let a = "";
 let res1=0, res2=0, res=0, operation="";
 function numberOnclick(item){
+   if(containBtn.disabled===true){
+      input.value = "";
+   }
    a += String(item);
    if(input.value.length<10){
       input.value = Number(a);
