@@ -85,21 +85,21 @@ function containOnclick(){
    res2 = input.value;
    if (operation === "+"){
       res=res1*1+res2*1;
-      resultInput.value = String(res1) + "+" + String(res2) + "=" + String(res.toFixed(3));
+      resultInput.value = String(res1) + "+" + String(res2) + "=" + String(res);
    }
    else if (operation === "-"){
       res=res1*1-res2*1;
-      resultInput.value = String(res1) + "-" + String(res2) + "=" + String(res.toFixed(3));
+      resultInput.value = String(res1) + "-" + String(res2) + "=" + String(res);
    }
    else if (operation === "*"){
       res=(res1*1)*(res2*1);
-      resultInput.value = String(res1) + "*" + String(res2) + "=" + String(res.toFixed(3));
+      resultInput.value = String(res1) + "*" + String(res2) + "=" + String(res);
    }
    else if (operation === "/"){
       res=(res1*1)/(res2*1);
-      resultInput.value = String(res1) + "÷" + String(res2) + "=" + String(res.toFixed(3));
+      resultInput.value = String(res1) + "÷" + String(res2) + "=" + String(res);
    }
-   input.value = res.toFixed(3);
+   input.value = res;
    pointBtn.classList.remove("no-drop");
    pilusBtn.classList.remove("active-btn");
    minusBtn.classList.remove("active-btn");
