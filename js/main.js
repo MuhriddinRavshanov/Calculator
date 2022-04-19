@@ -39,7 +39,7 @@ function pilusOnclick(){
    minusBtn.classList.remove("active-btn");
    multiplyBtn.classList.remove("active-btn");
    divisionBtn.classList.remove("active-btn");
-   operation = "+"
+   operation = "+";
 }
 function minusOnclick(){
    res1 = input.value;
@@ -52,7 +52,7 @@ function minusOnclick(){
    minusBtn.classList.add("active-btn");
    multiplyBtn.classList.remove("active-btn");
    divisionBtn.classList.remove("active-btn");
-   operation = "-"
+   operation = "-";
 }
 function multiplyOnclick(){
    res1 = input.value;
@@ -65,7 +65,7 @@ function multiplyOnclick(){
    minusBtn.classList.remove("active-btn");
    multiplyBtn.classList.add("active-btn");
    divisionBtn.classList.remove("active-btn");
-   operation = "*"
+   operation = "*";
 }
 function divisionOnclick(){
    res1 = input.value;
@@ -78,7 +78,7 @@ function divisionOnclick(){
    minusBtn.classList.remove("active-btn");
    multiplyBtn.classList.remove("active-btn");
    divisionBtn.classList.add("active-btn");
-   operation = "/"
+   operation = "/";
 }
 
 function containOnclick(){
