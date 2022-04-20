@@ -84,22 +84,22 @@ function divisionOnclick(){
 function containOnclick(){
    res2 = input.value;
    if (operation === "+"){
-      res=res1*1+res2*1;
-      resultInput.value = String(res1) + "+" + String(res2) + "=" + String(res);
+      res=String((res1*1+res2*1).toFixed(2));
+      resultInput.value = String(res1) + "+" + String(res2) + "=" + String(Number(res));
    }
    else if (operation === "-"){
-      res=res1*1-res2*1;
-      resultInput.value = String(res1) + "-" + String(res2) + "=" + String(res);
+      res=String((res1*1-res2*1).toFixed(2));
+      resultInput.value = String(res1) + "-" + String(res2) + "=" + String(Number(res));
    }
    else if (operation === "*"){
-      res=(res1*1)*(res2*1);
-      resultInput.value = String(res1) + "*" + String(res2) + "=" + String(res);
+      res=String(((res1*1)*(res2*1)).toFixed(2));
+      resultInput.value = String(res1) + "*" + String(res2) + "=" + String(Number(res));
    }
    else if (operation === "/"){
-      res=(res1*1)/(res2*1);
-      resultInput.value = String(res1) + "÷" + String(res2) + "=" + String(res);
+      res=String(((res1*1)/(res2*1)).toFixed(2));
+      resultInput.value = String(res1) + "÷" + String(res2) + "=" + String(Number(res));
    }
-   input.value = res;
+   input.value = Number(res);
    pointBtn.classList.remove("no-drop");
    pilusBtn.classList.remove("active-btn");
    minusBtn.classList.remove("active-btn");
